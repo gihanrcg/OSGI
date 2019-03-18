@@ -1,11 +1,11 @@
 package servicepublisher;
 
-public interface ServicePublish {
+import conversions.lengthConversions;
+import conversions.tempratureConversions;
+import conversions.weightConversions;
 
-	public String publishService();
-	
-	public int add(int a , int b);
-	
-	public double convertGramToKilogram(double gram) ;
+public interface ServicePublish extends weightConversions,lengthConversions,tempratureConversions {
+
+	public String publishService();	
 
 }
